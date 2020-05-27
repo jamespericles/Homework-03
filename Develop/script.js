@@ -14,6 +14,8 @@ passwordField = document.getElementById("pass-field");
 generateBtn = document.getElementById("generate");
 copyButton = document.getElementById("copy");
 plength;
+userPassword;
+passwordCharSet;
 
 // Write password to the #password input
 function writePassword() {
