@@ -19,6 +19,11 @@ passwordCharSet;
 
 // Write password to the #password input
 function writePassword() {
+  userPassword = "";
+  passwordCharSet = "";
+  if (lowercaseInput.checked) {
+    passwordCharSet += lowercase;
+  }
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
 
