@@ -14,3 +14,4 @@
   If possible, prompt user that that has been accomplished
   Add radio button to allow user to select whether or not the password is automatically copied to clipboard or not
 - Must be responsive
+- Make password length slider span the length of the card-body
