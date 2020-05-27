@@ -11,3 +11,4 @@
 - Password is either displayed onscreen or written in an alert
   Or have it automatically copy to user clipboard?
   If possible, prompt user that that has been accomplished
+  Add radio button to allow user to select whether or not the password is automatically copied to clipboard or not
