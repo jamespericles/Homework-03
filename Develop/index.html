@@ -16,10 +16,14 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+   
         <div class="controls">
           <div class="control length" id="length-box" >
             <label for="length">Password Length</label>
-            <input type="range" id='length' min="8" max="128" list="ranges">
+            <form>
+              <input type="range" name="amountRange" min="8" max="128" value="8" oninput="this.form.amountInput.value=this.value" />
+              <input type="number" name="amountInput" min="8" max="128" value="8" oninput="this.form.amountRange.value=this.value" />
+          </form>
         <div class="card-body">
           <textarea
             readonly
