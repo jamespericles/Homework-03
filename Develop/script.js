@@ -4,7 +4,11 @@ let clipboard = new Clipboard(".copy");
 const lowercase = "abcdefghijklmnopqrstuvwxyz",
   uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers = "0123456789",
-  specialChar = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
+  specialChar = "!@#$%^&*()_+~`|}{[]:;?><,./-=",
+  lowercaseInput = document.getElementById("lowercase"),
+  uppercaseInput = document.getElementById("uppercase"),
+  numbersInput = document.getElementById("numbers"),
+  specialCharInput = document.getElementById("specialChar");
 
 // Write password to the #password input
 function writePassword() {
