@@ -13,6 +13,7 @@ lengthInput = document.getElementById("length");
 passwordField = document.getElementById("pass-field");
 generateBtn = document.getElementById("generate");
 copyButton = document.getElementById("copy");
+plength;
 
 // Write password to the #password input
 function writePassword() {
