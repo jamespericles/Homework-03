@@ -24,6 +24,16 @@ function writePassword() {
   if (lowercaseInput.checked) {
     passwordCharSet += lowercase;
   }
+  if (uppercaseInput.checked) {
+    passwordCharSet += uppercase;
+  }
+  if (specialCharInput.checked) {
+    passwordCharSet += specialChar;
+  }
+  if (numbersInput.checked) {
+    passwordCharSet += numbers;
+  }
+
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
 
