@@ -9,6 +9,10 @@ const lowercase = "abcdefghijklmnopqrstuvwxyz",
   uppercaseInput = document.getElementById("uppercase"),
   numbersInput = document.getElementById("numbers"),
   specialCharInput = document.getElementById("specialChar");
+lengthInput = document.getElementById("length");
+passwordField = document.getElementById("pass-field");
+generateBtn = document.getElementById("generate");
+copyButton = document.getElementById("copy");
 
 // Write password to the #password input
 function writePassword() {
