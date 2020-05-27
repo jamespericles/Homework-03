@@ -24,6 +24,22 @@
               <input type="range" name="amountRange" min="8" max="128" value="8" oninput="this.form.amountInput.value=this.value" />
               <input type="number" name="amountInput" min="8" max="128" value="8" oninput="this.form.amountRange.value=this.value" />
           </form>
+          <div class="control">
+            <input type="checkbox" id="lowercase">
+            <label class="check-label" for="lowercase"><span class="checkbox">Use Lowercase Characters</span></label>
+          </div>
+          <div class="control">
+            <input type="checkbox" id="uppercase">
+            <label class="check-label" for="uppercase"><span class="checkbox">Use Uppercase Characters</span></label>
+          </div>
+          <div class="control">
+            <input type="checkbox" id="numbers">
+            <label class="check-label" for="numbers"><span class="checkbox">Use Numbers</span></label>
+          </div>
+          <div class="control">
+            <input type="checkbox" id="punctuation">
+            <label class="check-label" for="punctuation"><span class="checkbox">Use special characters</span></label>
+          </div>
         <div class="card-body">
           <textarea
             readonly
