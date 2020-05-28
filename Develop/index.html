@@ -42,12 +42,13 @@
             <input type="checkbox" id="specialChar">
             <label class="check-label" for="specialChar"><span class="checkbox">Special Characters</span></label>
           </div>
-        <div class="card-body">
-          <div class="password-section">
-            <div class="pass-field" id="pass-field">
-            ----
-            </div>
-        </div>
+          <div class="card-body">
+            <textarea
+              readonly
+              id="password"
+              placeholder="Your Secure Password"
+              aria-label="Generated Password"
+            ></textarea>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
