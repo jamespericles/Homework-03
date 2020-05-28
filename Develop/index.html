@@ -20,14 +20,14 @@
         </div>
    
         <div class="controls">
-          <div class="control length" id="length-box" >
+          <div class="control length">
             <label for="length">Password Length</label>
             <form>
-              <input type="range" name="amountRange" min="8" max="128" value="8" oninput="this.form.amountInput.value=this.value" />
+              <input id="length-box" type="range" name="amountRange" min="8" max="128" value="8" oninput="this.form.amountInput.value=this.value" />
               <input type="number" name="amountInput" min="8" max="128" value="8" oninput="this.form.amountRange.value=this.value" />
           </form>
           <div class="control">
-            <input type="checkbox" id="lowercase">
+            <input type="checkbox" id="lowercase" value="">
             <label class="check-label" for="lowercase"><span class="checkbox">Lowercase Characters</span></label>
           </div>
           <div class="control">
@@ -50,7 +50,7 @@
               aria-label="Generated Password"
             ></textarea>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate" class="btn" onClick="writePassword()">Generate Password</button>
         </div>
       </div>
     </div>
