@@ -1,6 +1,6 @@
 // Assignment Code
 let generateBtn = document.querySelector("#generate");
-let clipboard = new Clipboard(".copy");
+let clipboard = new clipboard(".copy");
 const lowercase = "abcdefghijklmnopqrstuvwxyz",
   uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers = "0123456789",
