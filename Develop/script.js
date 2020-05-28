@@ -30,3 +30,4 @@ function writePassword() {
     passwordCharSet += numbers;
   }
 }
+document.getElementById("generate").addEventListener("click", writePassword());
