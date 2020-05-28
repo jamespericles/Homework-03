@@ -1,4 +1,4 @@
-var lowercase = "abcdefghijklmnopqrstuvwxyz",
+let lowercase = "abcdefghijklmnopqrstuvwxyz",
   uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers = "0123456789",
   specialChar = "!@#$%^&*()_+~`|}{[]:;?><,./-=",
