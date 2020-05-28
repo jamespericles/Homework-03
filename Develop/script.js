@@ -1,16 +1,18 @@
-let clipboard = new clipboard(".copy");
-let lowercase = "abcdefghijklmnopqrstuvwxyz",
+var lowercase = "abcdefghijklmnopqrstuvwxyz",
   uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers = "0123456789",
   specialChar = "!@#$%^&*()_+~`|}{[]:;?><,./-=",
   lowercaseInput = document.getElementById("lowercase"),
   uppercaseInput = document.getElementById("uppercase"),
-  numbersInput = document.getElementById("numbers"),
   specialCharInput = document.getElementById("specialChar"),
+  numbersInput = document.getElementById("numbers"),
   lengthInput = document.getElementById("length"),
-  passwordField = document.getElementById("pass-field"),
+  passwordFeild = document.getElementById("pass-field"),
   generateBtn = document.getElementById("generate"),
-  copyButton = document.getElementById("copy");
+  copyButton = document.getElementById("copy"),
+  plength,
+  userPassword,
+  passwordCharSet;
 
 function writePassword() {
   userPassword = "";
@@ -28,28 +30,3 @@ function writePassword() {
     passwordCharSet += numbers;
   }
 }
-
-clipboard.on("success", function (e) {
-  console.info("Action:", e.action);
-  console.info("Text:", e.text);
-  console.info("Trigger:", e.trigger);
-  let alertbox = document.getElementById("alert");
-  alertbox.innerHTML = "Copied!";
-  alertbox.classList.add("success");
-  setTimeout(function () {
-    alertbox.classList.remove("success");
-  }, 3000);
-
-  e.clearSelection();
-});
-
-clipboard.on("error", function (e) {
-  console.error("Action:", e.action);
-  console.error("Trigger:", e.trigger);
-  let alertbox = document.getElementById("alert");
-  alertbox.innerHTML = "Try select the text to copy";
-  alertbox.classList.add("fail");
-  setTimeout(function () {
-    alertbox.classList.remove("fail");
-  }, 3000);
-});
