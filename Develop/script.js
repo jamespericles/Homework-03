@@ -1,7 +1,6 @@
-// Assignment Code
 let generateBtn = document.querySelector("#generate");
-let clipboard = new clipboard(".copy");
-const lowercase = "abcdefghijklmnopqrstuvwxyz",
+// let clipboard = new clipboard(".copy");
+let lowercase = "abcdefghijklmnopqrstuvwxyz",
   uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers = "0123456789",
   specialChar = "!@#$%^&*()_+~`|}{[]:;?><,./-=",
@@ -13,11 +12,7 @@ lengthInput = document.getElementById("length");
 passwordField = document.getElementById("pass-field");
 generateBtn = document.getElementById("generate");
 copyButton = document.getElementById("copy");
-plength;
-userPassword;
-passwordCharSet;
 
-// Write password to the #password input
 function writePassword() {
   userPassword = "";
   passwordCharSet = "";
@@ -33,12 +28,4 @@ function writePassword() {
   if (numbersInput.checked) {
     passwordCharSet += numbers;
   }
-
-  let password = generatePassword();
-  let passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
