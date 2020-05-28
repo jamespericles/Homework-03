@@ -17,5 +17,8 @@ Current goals as of 5/28
 We have variables that contain all necessary characters
 We have logic that changes password generation based on what boxes the user has selected
 
-Find a way to communicate the password length selected by user to javascript
-Make the Button actually generate a password
+<!-- Find a way to communicate the password length selected by user to javascript -->
+<!-- Make the Button actually generate a password -->
+
+Generate password on screen besides the console
+Allow length to be affected
