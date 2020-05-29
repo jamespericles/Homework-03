@@ -36,11 +36,6 @@ function writePassword() {
     );
     console.log(passwordCharSet.length);
   }
-  // for (let i = 0; i <= lengthBox; i++) {
-  //   let randomNumber = Math.floor(Math.random() * passwordCharSet.length);
-  //   userPassword += passwordCharSet.charAt(randomNumber);
-  // }
-  console.log(userPassword);
 }
 document
   .getElementById("generate")
