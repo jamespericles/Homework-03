@@ -40,3 +40,9 @@ function writePassword() {
 
   console.log(userPassword);
 }
+function copyPassword() {
+  let copyText = document.getElementById("password");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
