@@ -134,7 +134,8 @@ button[disabled] {
 }
 
 @media (max-width: 690px) {
-  .btn {
+  .btn,
+  #copy {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
@@ -146,7 +147,8 @@ button[disabled] {
 }
 
 @media (max-width: 500px) {
-  .btn {
+  .btn,
+  #copy {
     font-size: 0.8rem;
   }
 }
