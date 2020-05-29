@@ -36,6 +36,7 @@ function writePassword() {
     );
     console.log(passwordCharSet.length);
   }
+  document.getElementById("password").innerHTML = userPassword;
 
   console.log(userPassword);
 }
