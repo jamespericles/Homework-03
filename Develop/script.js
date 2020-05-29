@@ -29,10 +29,16 @@ function writePassword() {
   if (numbersInput.checked) {
     passwordCharSet += numbers;
   }
-  for (let i = 0; i <= lengthBox; i++) {
-    let randomNumber = Math.floor(Math.random() * passwordCharSet.length);
-    userPassword += passwordCharSet.charAt(randomNumber);
+  for (let i = 0; i < lengthBox; i++) {
+    userPassword += passwordCharSet.charAt(
+      Math.floor(Math.random() * passwordCharSet.length)
+    );
+    console.log(passwordCharSet.length);
   }
+  // for (let i = 0; i <= lengthBox; i++) {
+  //   let randomNumber = Math.floor(Math.random() * passwordCharSet.length);
+  //   userPassword += passwordCharSet.charAt(randomNumber);
+  // }
   console.log(userPassword);
 }
 document
