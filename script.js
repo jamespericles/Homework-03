@@ -10,9 +10,6 @@ let lowercase = "abcdefghijklmnopqrstuvwxyz",
   numbersInput = document.getElementById("numbers"),
   // This variable receives the length from the slider
   lengthBox = document.getElementById("length-box").value,
-  passwordFeild = document.getElementById("pass-field"),
-  generateBtn = document.getElementById("generate"),
-  copyButton = document.getElementById("copy"),
   lengthInput = document.getElementById("length-box"),
   userPassword,
   passwordCharSet;
