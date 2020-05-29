@@ -18,9 +18,9 @@
 - Must be responsive
 - Run each file through an authenticator
 - Take screenshots of completed project and add to folder
-- Add clipboard functionality
-  <!-- Find a way to communicate the password length selected by user to javascript -->
-  <!-- Make the Button actually generate a password -->
+  <!-- - Add clipboard functionality -->
+    <!-- Find a way to communicate the password length selected by user to javascript -->
+    <!-- Make the Button actually generate a password -->
 
 <!-- Generate password on screen besides the console -->
 <!-- Allow length to be affected -->
