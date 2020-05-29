@@ -10,7 +10,7 @@ let lowercase = "abcdefghijklmnopqrstuvwxyz",
   passwordFeild = document.getElementById("pass-field"),
   generateBtn = document.getElementById("generate"),
   copyButton = document.getElementById("copy"),
-  plength,
+  lengthInput = document.getElementById("length-box"),
   userPassword,
   passwordCharSet;
 
@@ -29,6 +29,7 @@ function writePassword() {
   if (numbersInput.checked) {
     passwordCharSet += numbers;
   }
+  lengthBox = Number(lengthInput.value);
   for (let i = 0; i < lengthBox; i++) {
     userPassword += passwordCharSet.charAt(
       Math.floor(Math.random() * passwordCharSet.length)
