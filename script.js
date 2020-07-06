@@ -17,7 +17,7 @@ let lowercase = "abcdefghijklmnopqrstuvwxyz",
 function writePassword() {
   userPassword = "";
   passwordCharSet = "";
-  // The four if statements below alter what is character sets
+  // The four if statements below alter what character sets
   // are included based on the users button selections
   if (lowercaseInput.checked) {
     passwordCharSet += lowercase;
